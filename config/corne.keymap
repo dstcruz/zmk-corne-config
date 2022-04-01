@@ -13,7 +13,7 @@
 #define LY_SYS 1
 #define LY_NUM 2
 #define LY_SM1 3
-#define SY_SM2 4
+#define LY_SM2 4
 
 
 / {
