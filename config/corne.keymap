@@ -44,7 +44,7 @@
                         bindings = <
                                 &none    &kp Y      &hm LCTRL C    &hm LALT L    &hm LGUI M      &kp K                    &kp Z    &hm RGUI F      &hm RALT U    &hm RCTRL COMMA    &kp BACKSPACE    &none
                                 &none    &kp I      &kp S          &kp R         &hl LY_SYS T    &kp G                    &kp P    &hl LY_SYS N    &kp E         &kp A              &kp O            &none
-                                &none    &kp Q      &kp V          &kp D         &kp W           &kp J                    &kp B    &kp H           &kp SLASH     &kp DOT            &kp X            &none
+                                &none    &kp Q      &kp V          &kp W         &kp D           &kp J                    &kp B    &kp H           &kp SLASH     &kp DOT            &kp X            &none
                                                                    &none         &kp SPACE       &kp LSHIFT               &none    &none           &none
                         >;
                 };
@@ -52,7 +52,7 @@
                 system_layer {
                         bindings = <
                                 &none    &none      &none         &none          &none           &none                    &none    &none           &kp UP        &none             &none            &none
-                                &none    &kp TAB    &none         &none          &none           &none                    &none    &kp LEFT        &kp DOWN      &kp RIGHT         &none            &none
+                                &none    &kp TAB    &none         &none          &none           &none                    &none    &kp LEFT        &kp DOWN      &kp RIGHT         &kp RETURN       &none
                                 &none    &none      &none         &none          &none           &none                    &none    &none           &none         &none             &none            &none
                                                                   &none          &none           &none                    &none    &none           &none 
                         >;
