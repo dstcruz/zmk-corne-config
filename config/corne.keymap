@@ -11,8 +11,10 @@
 // Layers
 #define LY_ALP 0
 #define LY_SYS 1
-#define LY_SM1 2
-#define SY_SM2 3
+#define LY_NUM 2
+#define LY_SM1 3
+#define SY_SM2 4
+
 
 / {
         behaviors {
@@ -35,6 +37,16 @@
                         flavor = "tap-preferred";
                         bindings = <&sl>, <&kp>;
                 };
+
+                td: tapdance {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "TAPDANCE";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <190>;
+                        quick_tap_ms = <0>;
+                        flavor = "tap-preferred";
+                        bindings = <&kp>, <&kp>;
+                };
         };
 
         keymap {
@@ -42,20 +54,40 @@
 
                 default_layer {
                         bindings = <
-                                &none    &kp Y      &hm LCTRL C    &hm LALT L    &hm LGUI M      &kp K                    &kp Z    &hm RGUI F      &hm RALT U    &hm RCTRL COMMA    &kp BACKSPACE    &none
-                                &none    &kp I      &kp S          &kp R         &hl LY_SYS T    &kp G                    &kp P    &hl LY_SYS N    &kp E         &kp A              &kp O            &none
-                                &none    &kp Q      &kp V          &kp W         &kp D           &kp J                    &kp B    &kp H           &kp SLASH     &kp DOT            &kp X            &none
-                                                                   &none         &kp SPACE       &kp LSHIFT               &none    &none           &none
+                                &none    &kp Y        &hm LCTRL C    &hm LALT L        &hm LGUI M      &kp K                    &kp Z    &hm RGUI F          &hm RALT U    &hm RCTRL COMMA    &kp BACKSPACE    &none
+                                &none    &kp I        &kp S          &kp R             &hl LY_SYS T    &kp G                    &kp P    &hl LY_SYS N        &kp E         &kp A              &kp O            &none
+                                &none    &kp Q        &kp V          &kp W             &kp D           &kp J                    &kp B    &kp H               &kp SLASH     &kp DOT            &kp X            &none
+                                                                     &none             &kp SPACE       &kp LSHIFT               &none    &none               &none
                         >;
                 };
 
                 system_layer {
                         bindings = <
-                                &none    &none      &none         &none          &none           &none                    &none    &none           &kp UP        &none             &none            &none
-                                &none    &kp TAB    &none         &none          &none           &none                    &none    &kp LEFT        &kp DOWN      &kp RIGHT         &kp RETURN       &none
-                                &none    &none      &none         &none          &none           &none                    &none    &none           &none         &none             &none            &none
-                                                                  &none          &none           &none                    &none    &none           &none 
+                                &none    &none        &kp ESC       &kp LC(LS(TAB))    &kp RC(TAB)     &none                    &none    &td LG(V) LG(C)    &kp UP        &none             &none              &none
+                                &none    &kp TAB      &kp DEL       &none              &none           &none                    &none    &kp LEFT           &kp DOWN      &kp RIGHT         &kp RETURN         &none
+                                &none    &none        &none         &none              &none           &none                    &none    &none              &none         &none             &none              &none
+                                                                    &none              &none           &none                    &none    &none              &none 
                         >;
                 };
+
+                number_layer {
+                        bindings = <
+                                &none    &none        &kp DOT       &kp N0             &kp N1          &none                    &none    &kp N2             &kp N3        &kp N4            &none              &none
+                                &none    &kp MINUS    &kp PLUS      &kp N5             &kp N6          &none                    &none    &kp N7             &kp N8        &kp N9            &kp EQUAL          &none
+                                &none    &none        &none         &none              &none           &none                    &none    &none              &none         &none             &none              &none
+                                                                    &none              &none           &none                    &none    &none              &none 
+                        >;
+                };
+
+/*
+                number_layer {
+                        bindings = <
+                                &none    &none        &none         &none              &none           &none                    &none    &none              &none         &none             &none              &none
+                                &none    &none        &none         &none              &none           &none                    &none    &none              &none         &none             &none              &none
+                                &none    &none        &none         &none              &none           &none                    &none    &none              &none         &none             &none              &none
+                                                                    &none              &none           &none                    &none    &none              &none 
+                        >;
+                };
+*/
         };
 };
