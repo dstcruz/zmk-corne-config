@@ -14,6 +14,7 @@
 #define LY_NUM 2
 #define LY_SM1 3
 #define LY_SM2 4
+#define LY_CTL 5
 
 
 / {
@@ -54,7 +55,7 @@
 
                 default_layer {
                         bindings = <
-                                &none    &kp Y           &hm LCTRL C     &hm LALT L        &hm LGUI M      &kp K                    &kp Z    &hm RGUI F          &hm RALT U      &hm RCTRL COMMA    &kp BACKSPACE    &none
+                                &none    &hl LY_CTL Y    &hm LCTRL C     &hm LALT L        &hm LGUI M      &kp K                    &kp Z    &hm RGUI F          &hm RALT U      &hm RCTRL COMMA    &kp BACKSPACE    &none
                                 &none    &hl LY_NUM I    &hl LY_SM2 S    &hl LY_SM1 R      &hl LY_SYS T    &kp G                    &kp P    &hl LY_SYS N        &hl LY_SM1 E    &hl LY_SM2 A       &hl LY_NUM O     &none
                                 &none    &kp Q           &kp V           &kp W             &kp D           &kp J                    &kp B    &kp H               &kp SLASH       &kp DOT            &kp X            &none
                                                                          &none             &kp SPACE       &kp LSHIFT               &none    &none               &none
@@ -92,6 +93,15 @@
                         bindings = <
                                 &none    &none          &kp ATSN         &kp SQT            &kp DQT         &none                    &none    &kp LPRN           &kp RPRN         &kp SEMI          &none              &none
                                 &none    &kp STAR       &kp PRCNT        &td QMARK EXCL     &kp UNDER       &none                    &none    &kp LBRC           &kp RBRC         &kp AMPS          &kp COLON          &none
+                                &none    &none          &none            &none              &none           &none                    &none    &none              &none            &none             &none              &none
+                                                                         &none              &none           &none                    &none    &none              &none 
+                        >;
+                };
+
+                control_layer {
+                        bindings = <
+                                &none    &none          &none            &none              &none           &none                    &none    &none              &none            &none             &none              &none
+                                &none    &none          &none            &none              &none           &none                    &none    &bt BT_PREV        &bt BT_CLR       &bt BT_NXT        &none              &none
                                 &none    &none          &none            &none              &none           &none                    &none    &none              &none            &none             &none              &none
                                                                          &none              &none           &none                    &none    &none              &none 
                         >;
