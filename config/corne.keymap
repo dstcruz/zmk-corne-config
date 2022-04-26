@@ -55,9 +55,9 @@
 
                 default_layer {
                         bindings = <
-                                &none    &hl LY_CTL Y    &hm LCTRL C     &hm LALT L        &hm LGUI M      &kp K                    &kp Z         &hm RGUI F          &hm RALT U      &hm RCTRL COMMA    &kp BACKSPACE    &none
+                                &none    &none           &hm LCTRL C     &hm LALT L        &hm LGUI M      &kp K                    &kp Z         &hm RGUI F          &hm RALT U      &hm RCTRL Y        &kp BACKSPACE    &none
                                 &none    &hl LY_NUM I    &hl LY_SM2 S    &hl LY_SM1 R      &hl LY_SYS T    &kp G                    &kp P         &hl LY_SYS N        &hl LY_SM1 E    &hl LY_SM2 A       &hl LY_NUM O     &none
-                                &none    &kp Q           &kp V           &kp W             &kp D           &kp J                    &kp B         &kp H               &kp SLASH       &kp DOT            &kp X            &none
+                                &none    &kp Q           &kp V           &kp W             &kp D           &hl SY_CTL J             &kp B         &kp H               &kp DOT         &kp COMMA          &kp X            &none
                                                                          &none             &none           &kp SPACE                &kp RSHIFT    &none               &none
                         >;
                 };
