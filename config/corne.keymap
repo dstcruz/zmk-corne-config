@@ -82,8 +82,8 @@
 
                 sym1_layer {
                         bindings = <
-                                &none    &none          &none            &kp LS(N3)         &kp DLLR        &none                    &none        &kp LS(COMMA)      &kp LS(DOT)      &kp CARET         &none                 &none
-                                &none    &kp GRAVE      &kp TILDE        &kp APOS           &kp BSLH        &none                    &none        &kp MINUS          &kp EQUAL        &kp PIPE          &kp LBRC              &none
+                                &none    &none          &none            &kp LS(N3)         &kp DLLR        &none                    &none        &kp LS(W)          &kp LS(E)        &kp CARET         &none                 &none
+                                &none    &kp GRAVE      &kp TILDE        &kp APOS           &kp BSLH        &none                    &none        &kp MINUS          &kp EQUAL        &kp PIPE          &kp LBKT              &none
                                 &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
                                                                          &none              &none           &none                    &none        &none              &none 
                         >;
