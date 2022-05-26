@@ -73,8 +73,8 @@
 
                 number_layer {
                         bindings = <
-                                &none    &none           &kp DOT         &kp N0             &kp N1          &none                    &none        &kp N2             &kp N3           &kp N4            &none                 &none
-                                &none    &kp MINUS       &kp PLUS        &kp N5             &kp N6          &none                    &none        &kp N7             &kp N8           &kp N9            &kp EQUAL             &none
+                                &none    &none           &kp E           &kp N0             &kp N1          &none                    &none        &kp N2             &kp N3           &kp N4            &none                 &none
+                                &none    &kp APOS        &kp RBRC        &kp N5             &kp N6          &none                    &none        &kp N7             &kp N8           &kp N9            &kp EQUAL             &none
                                 &none    &none           &none           &none              &none           &none                    &none        &none              &none            &none             &none                 &none
                                                                          &none              &none           &none                    &none        &none              &none 
                         >;
@@ -83,7 +83,7 @@
                 sym1_layer {
                         bindings = <
                                 &none    &none          &none            &kp LS(N3)         &kp DLLR        &none                    &none        &kp LS(COMMA)      &kp LS(DOT)      &kp CARET         &none                 &none
-                                &none    &kp GRAVE      &kp TILDE        &kp MINUS          &kp BSLH        &none                    &none        &kp LBKT           &kp RBKT         &kp PIPE          &kp SLASH             &none
+                                &none    &kp GRAVE      &kp TILDE        &kp APOS           &kp BSLH        &none                    &none        &kp MINUS          &kp EQUAL        &kp PIPE          &kp LBRC              &none
                                 &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
                                                                          &none              &none           &none                    &none        &none              &none 
                         >;
@@ -91,8 +91,8 @@
 
                 sym2_layer {
                         bindings = <
-                                &none    &none          &kp ATSN         &kp SQT            &kp DQT         &none                    &none        &kp LPRN           &kp RPRN         &kp SEMI          &none                 &none
-                                &none    &kp STAR       &kp PRCNT        &td QMARK EXCL     &kp UNDER       &none                    &none        &kp LBRC           &kp RBRC         &kp AMPS          &kp COLON             &none
+                                &none    &none          &kp ATSN         &kp Q              &kp LS(Q)       &none                    &none        &kp LPRN           &kp RPRN         &kp Z             &none                 &none
+                                &none    &kp STAR       &kp PRCNT        &td QMARK EXCL     &kp DQT         &none                    &none        &kp LS(MINUS)      &kp LS(PLUS)     &kp AMPS          &kp LS(Z)             &none
                                 &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
                                                                          &none              &none           &none                    &none        &none              &none 
                         >;
