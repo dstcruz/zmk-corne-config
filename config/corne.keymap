@@ -55,65 +55,65 @@
 
                 default_layer {
                         bindings = <
-                                &none    &none           &hm LALT W      &hm LCTRL P       &hm LGUI R      &kp T                    &kp Y         &hm RGUI U          &hm RCTRL I     &hm RALT O         &kp BACKSPACE       &none
-                                &none    &hl LY_NUM A    &hl LY_SM2 S    &hl LY_SM1 D      &hl LY_SYS F    &kp G                    &kp H         &hl LY_SYS J        &hl LY_SM1 K    &hl LY_SM2 L       &hl LY_NUM SEMI     &none
-                                &none    &kp E           &kp X           &kp C             &kp V           &hl LY_CTL B             &kp N         &kp M               &kp COMMA       &kp DOT            &kp SLASH           &none
-                                                                         &none             &none           &kp SPACE                &kp RSHIFT    &none               &none
+                                &none    &none           &hm LALT W         &hm LCTRL P       &hm LGUI R      &kp T                    &kp Y         &hm RGUI U          &hm RCTRL I     &hm RALT O         &kp BACKSPACE       &none
+                                &none    &hl LY_NUM A    &hl LY_SM2 S       &hl LY_SM1 D      &hl LY_SYS F    &kp G                    &kp H         &hl LY_SYS J        &hl LY_SM1 K    &hl LY_SM2 L       &hl LY_NUM SEMI     &none
+                                &none    &kp E           &kp X              &kp C             &kp V           &hl LY_CTL B             &kp N         &kp M               &kp COMMA       &kp DOT            &kp SLASH           &none
+                                                                            &none             &none           &kp SPACE                &kp RSHIFT    &none               &none
                         >;
                 };
 
                 system_layer {
                         bindings = <
-                                &none    &none           &kp ESC         &kp LC(LS(TAB))    &kp RC(TAB)     &none                    &none        &td LG(V) LG(C)    &kp UP           &none             &trans                &none
-                                &none    &kp TAB         &kp DEL         &none              &none           &none                    &none        &kp LEFT           &kp DOWN         &kp RIGHT         &kp RETURN            &none
-                                &none    &none           &none           &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                                                         &none              &none           &trans                   &trans       &none              &none 
+                                &none    &none           &kp ESC            &none             &none           &none                    &none        &td LG(V) LG(C)    &kp UP           &none             &trans                &none
+                                &none    &kp TAB         &kp LC(LS(TAB))    &kp DEL           &kp RC(TAB)     &none                    &none        &kp LEFT           &kp DOWN         &kp RIGHT         &kp RETURN            &none
+                                &none    &none           &none              &none             &none           &none                    &none        &none              &none            &none             &none                 &none
+                                                                            &none             &none           &trans                   &trans       &none              &none 
                         >;
                 };
 
                 number_layer {
                         bindings = <
-                                &none    &none           &kp E           &kp N0             &kp N1          &none                    &none        &kp N2             &kp N3           &kp N4            &trans                &none
-                                &none    &kp APOS        &kp RBRC        &kp N5             &kp N6          &none                    &none        &kp N7             &kp N8           &kp N9            &kp RBKT              &none
-                                &none    &none           &none           &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                                                         &none              &none           &trans                   &trans       &none              &none 
+                                &none    &none           &kp E              &kp N0            &kp N1          &none                    &none        &kp N2             &kp N3           &kp N4            &trans                &none
+                                &none    &kp APOS        &kp RBRC           &kp N5            &kp N6          &none                    &none        &kp N7             &kp N8           &kp N9            &kp RBKT              &none
+                                &none    &none           &none              &none             &none           &none                    &none        &none              &none            &none             &none                 &none
+                                                                            &none             &none           &trans                   &trans       &none              &none 
                         >;
                 };
 
                 sym1_layer {
                         bindings = <
-                                &none    &none          &kp DQT          &kp LS(N3)         &kp DLLR        &none                    &none        &kp LS(W)          &kp LS(E)        &kp CARET         &trans                &none
-                                &none    &kp GRAVE      &kp TILDE        &kp APOS           &kp BSLH        &none                    &none        &kp MINUS          &kp EQUAL        &kp PIPE          &kp LBKT              &none
-                                &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                                                         &none              &none           &trans                   &trans       &none              &none 
+                                &none    &none          &kp DQT             &kp LS(N3)        &kp DLLR        &none                    &none        &kp LS(W)          &kp LS(E)        &kp CARET         &trans                &none
+                                &none    &kp GRAVE      &kp TILDE           &kp APOS          &kp BSLH        &none                    &none        &kp MINUS          &kp EQUAL        &kp PIPE          &kp LBKT              &none
+                                &none    &none          &none               &none             &none           &none                    &none        &none              &none            &none             &none                 &none
+                                                                            &none             &none           &trans                   &trans       &none              &none 
                         >;
                 };
 
                 sym2_layer {
                         bindings = <
-                                &none    &none          &kp ATSN         &kp Q              &kp LS(Q)       &none                    &none        &kp LPRN           &kp RPRN         &kp Z             &trans                &none
-                                &none    &kp STAR       &kp PRCNT        &kp EXCL           &kp LBRC        &none                    &none        &kp LS(MINUS)      &kp LS(PLUS)     &kp AMPS          &kp LS(Z)             &none
-                                &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                                                         &none              &none           &trans                   &trans       &none              &none 
+                                &none    &none          &kp ATSN            &kp Q             &kp LS(Q)       &none                    &none        &kp LPRN           &kp RPRN         &kp Z             &trans                &none
+                                &none    &kp STAR       &kp PRCNT           &kp EXCL          &kp LBRC        &none                    &none        &kp LS(MINUS)      &kp LS(PLUS)     &kp AMPS          &kp LS(Z)             &none
+                                &none    &none          &none               &none             &none           &none                    &none        &none              &none            &none             &none                 &none
+                                                                            &none             &none           &trans                   &trans       &none              &none 
                         >;
                 };
 
                 control_layer {
                         bindings = <
-                                &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &trans                &none
-                                &none    &none          &none            &none              &none           &none                    &none        &bt BT_PRV         &bt BT_CLR       &bt BT_NXT        &none                 &none
-                                &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                                                         &none              &none           &trans                   &trans       &none              &none 
+                                &none    &none          &none               &none             &none           &none                    &none        &none              &none            &none             &trans                &none
+                                &none    &none          &none               &none             &none           &none                    &none        &bt BT_PRV         &bt BT_CLR       &bt BT_NXT        &none                 &none
+                                &none    &none          &none               &none             &none           &none                    &none        &none              &none            &none             &none                 &none
+                                                                            &none             &none           &trans                   &trans       &none              &none 
                         >;
                 };
 
 /*
-                number_layer {
+                template_layer {
                         bindings = <
-                                &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                &none    &none          &none            &none              &none           &none                    &none        &none              &none            &none             &none                 &none
-                                                                         &none              &none           &none                    &none        &none              &none 
+                                &none    &none          &none               &none              &none           &none                    &none        &none              &none            &none             &none                 &none
+                                &none    &none          &none               &none              &none           &none                    &none        &none              &none            &none             &none                 &none
+                                &none    &none          &none               &none              &none           &none                    &none        &none              &none            &none             &none                 &none
+                                                                            &none              &none           &none                    &none        &none              &none 
                         >;
                 };
 */
